@@ -1,0 +1,59 @@
+.message {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.message > p {
+  background-color: #f3f3f5;
+  font-size: medium;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 10px;
+  /* pushes it left side */
+  margin-right: auto;
+}
+
+.message > small {
+  color: gray;
+  position: absolute;
+  font-size: 8px;
+  bottom: -5px;
+  right: 0;
+}
+
+.message > span {
+  color: gray;
+  position: absolute;
+  font-size: 9px;
+  top: -2px;
+  left: 0;
+}
+
+.message__sender {
+  /* move it to right */
+  margin-left: auto;
+}
+
+.message__sender > .message__photo {
+  /* changing the flex order of the child */
+  /* so photo now become head of child  */
+  order: 1;
+  margin: 15px;
+}
+
+.message__sender > p {
+  background-color: #3cabfa;
+  color: white;
+}
+
+.message__sender > span {
+  display: none;
+}
+
+.message__photo {
+  order: 0;
+}
